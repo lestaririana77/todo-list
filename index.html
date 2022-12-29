@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    head>
+    <meta charset="utf-8">  
+    <title>Todo List App in JavaScript</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do List App in javascript</title>
-    <!-- Icontscout Link for Icons-->
-    <!--link rel="styleshoot" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="task-input">
-            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <!--svg style="width:24px;height:24px" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M6,5H18V7H6M7,11H17V13H7M5.5,17H18.5V19H5.5" />
-            </svg>
+            </svg-->
+            <img src="bars-icon.svg" alt="icon">
             <input type="text" placeholder="Add a new task">
         </div>
         <div class="controls">
@@ -25,58 +26,9 @@
             </div>
             <button class="clear-btn">Clear All</button>
         </div>
-        <ul class="task-box">
-            <li class="task">
-                <label for="1">
-                    <input type="checkbox" id="1">
-                    <p>Renew gym membership</p>
-                </label>
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                    <ul class="task-menu">
-                        <li><i class="uil uil-pen"></i>Edit</li>
-                        <li><i class="uil uil-trash"></i>Delete</li>
-
-                    </ul>
-                </div>
-            </li>
-            <li class="task">
-                <label for="1">
-                    <input type="checkbox" id="1">
-                    <p>Create a video for Youtube</p>
-                </label>
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
-            <li class="task">
-                <label for="1">
-                    <input type="checkbox" id="1">
-                    <p>Write a blog about new trends</p>
-                </label>
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
-            <li class="task">
-                <label for="1">
-                    <input type="checkbox" id="1">
-                    <p>Send project file to the client</p>
-                </label>
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
-            <li class="task">
-                <label for="1">
-                    <input type="checkbox" id="1">
-                    <p>Discuss new project with team</p>
-                </label>
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
-        </ul>
+        <ul class="task-box"></ul>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
